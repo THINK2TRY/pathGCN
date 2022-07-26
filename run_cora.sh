@@ -1,0 +1,12 @@
+CUDA_VISIBLE_DEVICES=$2 python main.py \
+--dataset $1 \
+--lr 1e-3 \
+--wd 2e-5 \
+--lr_oc 1e-2 \
+--wd_oc 1e-5 \
+--hidden_dim 64 \
+--num_paths 5 \
+--path_length 5 \
+--max_epochs 1000 \
+--dropout 0.6 \
+--num_layers 4 \
